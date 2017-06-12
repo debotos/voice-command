@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Speech Recognition</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+  </head>
+  <body></br>
+    <div class="container">
+      <div class="input-group">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-plus"></span></span>
+        <input id="text-box" type="text" class="form-control" name="text-box" placeholder="Task Info">
+      </div></br>
+      <div class="pull-left">
+          <button type="submit" id="add-btn" class="btn btn-success">Submit</button>
+      </div>
+      <div class="pull-right">
+          <button id="delete-btn" class="btn btn-danger">Delete Selected</button>
+      </div>
+
+      <table id="myTable" class="table table-striped">
+      <thead>
+        <tr>
+          <th>Serial</th>
+          <th>Select</th>
+          <th>Task Details</th>
+          <th>Created At</th>
+        </tr>
+      </thead>
+      <tbody id="add-here">
+        <!--Content Dynamically added by javascript file-->
+      </tbody>
+    </table>
+
+
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="js/annyang.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>
